@@ -75,7 +75,9 @@ For more details, you can check out the Appedix B of our [paper]().
 <div align="center">
 <img src=".\assets\cleaned_dataset.jpg" alt="Example of Cleaned Dataset" width="600" />
 </div>
+
 The cleaned dataset is structured into four parts for each API:
+
 - API Name: The identifier for the tool.
 - Description: A brief overview of the tool's purpose.
 - Usage Specifications: Detailed information on API calls and parameter interfaces.
@@ -87,9 +89,7 @@ The cleaned dataset is structured into four parts for each API:
 <img src=".\assets\instance.jpg" alt="Example of Instance in OOD-Toolset" width="600" />
 </div>
 
-For each test instance, we provided three cases from the same API as initial available few-shot demos (also referred to as *seed demos*). Notably, in the OOD setting, the sub-APIs in seed demos differ from those needed in the final query.
-
-For example, the function required for the Query is <u>ROUTE</u>. Consequently, tool-use cases related to this sub-API should not be included in the seed demos.
+For each test instance, we provided three cases from the same API as initial available few-shot demos (also referred to as *seed demos*). Notably, in the OOD setting, the sub-APIs in seed demos differ from those needed in the final query. For example, the function required for the Query is **ROUTE**. Consequently, tool-use cases related to this sub-API should not be included in the seed demos.
 
 ## 📈Case Study
 
