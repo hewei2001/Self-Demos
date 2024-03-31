@@ -8,6 +8,7 @@ class OpenAIKey:
         self.keys = self.get_openai_keys(keys_file_path)
         random.seed(int(time.time()))
         openai.api_key = random.choice(self.keys)
+        self.current_key = openai.api_key
 
     def get_openai_keys(self, keys_file_path):
         raw_key_list = []
@@ -19,21 +20,20 @@ class OpenAIKey:
     
     def switch_key(self):
         if len(self.keys) == 0:
-            return None
+            self.current_key = None
         elif len(self.keys) == 1:
-            print("No other keys available, waiting for 5s")
-            time.sleep(5)
-            openai.api_key = self.keys[0]
-            return openai.api_key
+            print("No other keys available, waiting for 10s")
+            time.sleep(10)
+            self.current_key = self.keys[0]
         else:
-            key = random.choice(self.keys)
-            while key == openai.api_key:
-                key = random.choice(self.keys)
-            openai.api_key = key
-            return key
+            new_key = random.choice(self.keys)
+            while new_key == self.current_key:
+                new_key = random.choice(self.keys)
+            self.current_key = new_key
 
     def remove_key(self):
-        self.keys.remove(openai.api_key)
+        if self.current_key in self.keys:
+            self.keys.remove(self.current_key)
 
     def process_error(self, e):
         if "RateLimitError" in repr(e) or "APIConnectionError" in repr(e) or "AuthenticationError" in repr(e):
