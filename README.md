@@ -1,6 +1,6 @@
 # Self-Demos & OOD-Toolset
 
-This is the official repository for [Self-Demos: Eliciting Out-of-Demonstration Generalizability in Large Language Models]().
+This is the official repository for [Self-Demos: Eliciting Out-of-Demonstration Generalizability in Large Language Models](https://arxiv.org/abs/2404.00884).
 
 🎉 Our paper is accepted to **NAACL 2024 Findings**.
 
@@ -68,7 +68,7 @@ To use Self-Demos, follow these steps:
 3. Manual Data Cleaning: Human annotators refined the corpus to ensure clarity in queries, correct logical structure, and consistency in parameter values.
 4. Query and Demonstration Construction: After cleaning, we proceeded to select instances from the tool-use cases and construct corresponding demonstrations.
 
-For more details, you can check out the Appedix B of our [paper]().
+For more details, you can check out the Appedix B of our [paper](https://arxiv.org/abs/2404.00884).
 
 **Example of Cleaned Dataset**:
 
@@ -151,7 +151,12 @@ Explanation: This is an interesting case where all methods, even with GPT-4 mode
 If you find Self-Demos useful or relevant to your project and research, please kindly cite our paper:
 
 ```Plain
-@article{
-    TODO
+@misc{he2024selfdemos,
+      title={Self-Demos: Eliciting Out-of-Demonstration Generalizability in Large Language Models}, 
+      author={Wei He and Shichun Liu and Jun Zhao and Yiwen Ding and Yi Lu and Zhiheng Xi and Tao Gui and Qi Zhang and Xuanjing Huang},
+      year={2024},
+      eprint={2404.00884},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
