@@ -68,7 +68,7 @@ To use Self-Demos, follow these steps:
 3. Manual Data Cleaning: Human annotators refined the corpus to ensure clarity in queries, correct logical structure, and consistency in parameter values.
 4. Query and Demonstration Construction: After cleaning, we proceeded to select instances from the tool-use cases and construct corresponding demonstrations.
 
-For more details, you can check out the Appedix B of our [paper](https://arxiv.org/abs/2404.00884).
+For more details, you can check out the Appendix B of our [paper](https://arxiv.org/abs/2404.00884).
 
 **Example of Cleaned Dataset**:
 
