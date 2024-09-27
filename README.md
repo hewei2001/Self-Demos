@@ -151,12 +151,11 @@ Explanation: This is an interesting case where all methods, even with GPT-4 mode
 If you find Self-Demos useful or relevant to your project and research, please kindly cite our paper:
 
 ```Plain
-@misc{he2024selfdemos,
-      title={Self-Demos: Eliciting Out-of-Demonstration Generalizability in Large Language Models}, 
-      author={Wei He and Shichun Liu and Jun Zhao and Yiwen Ding and Yi Lu and Zhiheng Xi and Tao Gui and Qi Zhang and Xuanjing Huang},
-      year={2024},
-      eprint={2404.00884},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{he2024self,
+  title={Self-Demos: Eliciting Out-of-Demonstration Generalizability in Large Language Models},
+  author={He, Wei and Liu, Shichun and Zhao, Jun and Ding, Yiwen and Lu, Yi and Xi, Zhiheng and Gui, Tao and Zhang, Qi and Huang, Xuan-Jing},
+  booktitle={Findings of the Association for Computational Linguistics: NAACL 2024},
+  pages={3829--3845},
+  year={2024}
 }
 ```
